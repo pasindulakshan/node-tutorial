@@ -3,6 +3,8 @@
 Node.js global objects are global in nature and they are available in all modules. 
 We do not need to include these objects in our application, rather we can use them directly. 
 These objects are modules, functions, strings and object itself as explained below. 
+
+Go to https://nodejs.org/api/globals.html for more info.
 ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------
@@ -15,33 +17,26 @@ These objects are modules, functions, strings and object itself as explained bel
  Global Functions 
 ------------------------------------------------------------ */
 // setTimeout(cb, ms) - call cb after ms milliseconds
-function printHello() {
-  console.log("Hello, World!");
-}
-// Now call above function after 2 seconds
-setTimeout(printHello, 2000);
-
 // clearTimeout(t) - stop the timer
-var t = setTimeout(printHello, 2000);
-clearTimeout(t);
-
 // setInterval(cb, ms) - call cb every ms milliseconds
-setInterval(printHello, 2000);
 
 /* ------------------------------------------------------------
 The following variables may appear to be global but are not. 
 They exist only in the scope of modules
 ------------------------------------------------------------ */
 // __dirname  - path to current directory
-console.log(__dirname);
-
 // __filename - file name
-console.log(__filename);
-
 // require()    - Used to import modules, JSON, and local files. (CommonJS)
 // module     - info about current module (file)
 
-/* ------------------------------------------------------------
-There are many more globals. 
-See https://nodejs.org/api/globals.html for more info.
------------------------------------------------------------- */
+/* Testing */
+function printHello() {
+  console.log("Hello, World!");
+}
+var t = setTimeout(printHello, 2000); // prints "Hello, World!" after 2 seconds
+clearTimeout(t); // stop the timer. no output
+
+setInterval(printHello, 2000); // prints "Hello, World!" every 2 seconds
+
+console.log(__dirname); // prints the path to the current directory
+console.log(__filename); // prints the file name
