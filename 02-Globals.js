@@ -1,4 +1,10 @@
 // GLOBALS  - NO WINDOW OBJECT !!!!
+/* ------------------------------------------------------------ 
+Node.js global objects are global in nature and they are available in all modules. 
+We do not need to include these objects in our application, rather we can use them directly. 
+These objects are modules, functions, strings and object itself as explained below. 
+------------------------------------------------------------ */
+
 /* ------------------------------------------------------------
  Global Objects
 ------------------------------------------------------------ */
@@ -36,6 +42,6 @@ console.log(__filename);
 // module     - info about current module (file)
 
 /* ------------------------------------------------------------
-There are more globals. 
+There are many more globals. 
 See https://nodejs.org/api/globals.html for more info.
 ------------------------------------------------------------ */
