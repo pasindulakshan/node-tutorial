@@ -33,7 +33,7 @@ some examples:
     http - creates an HTTP server in Node.js.
     assert - set of assertion functions useful for testing.
     path - includes methods to deal with file paths.
-    process - provides information and control about the current Node.js process.
+    os - provide information about the computer operating system.  
     .
     .
     .
