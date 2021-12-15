@@ -11,9 +11,9 @@ console.log(path.delimiter);
 console.log("joint path : " + path.join("/test", "test1", "test.txt"));
 
 // Resolve
-console.log("resolve : " + path.resolve("main.js"));
+console.log("resolve : " + path.resolve("app.js"));
 
 // extName
-console.log("ext name : " + path.extname("main.js"));
+console.log("ext name : " + path.extname("app.js"));
 
 // Node.js Documentation - https://nodejs.org/api/path.html
