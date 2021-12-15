@@ -24,10 +24,10 @@ Go to https://nodejs.org/api/globals.html for more info.
 The following variables may appear to be global but are not. 
 They exist only in the scope of modules
 ------------------------------------------------------------ */
-// __dirname  - path to current directory
-// __filename - file name
+// __dirname  - path to current directory (CommonJS)
+// __filename - file name (CommonJS)
 // require()    - Used to import modules, JSON, and local files. (CommonJS)
-// module     - info about current module (file)
+// module     - info about current module (CommonJS)
 
 /* Testing */
 function printHello() {
@@ -38,5 +38,5 @@ clearTimeout(t); // stop the timer. no output
 
 setInterval(printHello, 2000); // prints "Hello, World!" every 2 seconds
 
-console.log(__dirname); // prints the path to the current directory
-console.log(__filename); // prints the file name
+//console.log(__dirname); // prints the path to the current directory
+//console.log(__filename); // prints the file name
