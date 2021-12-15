@@ -9,4 +9,9 @@ export const persons = [
   },
 ];
 
+export const myDetails = {
+  firstName: "Pasindu",
+  lastName: "Lakshan",
+};
+
 export const CEO = "John";
