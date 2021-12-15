@@ -1,3 +1,5 @@
+//This is a Local Module
+
 const add = (x, y) => {
   return x + y;
 };
@@ -14,5 +16,4 @@ const div = (x, y) => {
   return x / y;
 };
 
-// export functions
 export { add, sub, mult, div };

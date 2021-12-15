@@ -20,6 +20,10 @@ let x = 50,
   y = 10;
 console.log("Addition of 50 and 10 is " + calculator.add(x, y));
 
+import * as data from "./05-localdata.js";
+console.log(data.persons);
+console.log(data.CEO);
+
 /* ------------------------------------------------------------
 Core Modules: 
 Node.js has many built-in modules that are part of the platform and comes with Node.js installation. 
