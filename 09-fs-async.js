@@ -29,7 +29,7 @@ writeFile("./content/test.txt", "Hello ", (err) => {
             console.log(err);
           } else {
             console.log(data.toString());
-            console.log("Done with this task");
+            console.log("Done with first task");
           }
         });
       }
@@ -37,6 +37,5 @@ writeFile("./content/test.txt", "Hello ", (err) => {
   });
 });
 
-console.log("Start Next Task");
-
+console.log("Start second Task");
 //Node.js Documentation - https://nodejs.org/api/fs.html
