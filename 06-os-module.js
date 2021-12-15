@@ -1,7 +1,8 @@
+//OS module provides a few basic operating-system related utility functions.
 import os from "os";
 
 //User Info
-console.log(os.userInfo());
+console.log(os.userInfo().username);
 
 // method returns the system uptime in seconds
 console.log(`The System Uptime is ${os.uptime()} seconds`);
